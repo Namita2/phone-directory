@@ -1,22 +1,17 @@
 import React from 'react';
+import Header from './Header';
 
 function App() {
   return (
     <div>
-      <label htmlFor="Name">Name:</label>
-      <input id="name" type="text" placeholder="Type Here" defaultValue="Namita"/>
+      <Header />
+     <button>Add</button>
+    <div>
+      <span>Name</span><br/>
+      <span>Number</span>
     </div>
-    // <div>
-    // <div className="header">
-    //   phone directory
-    // </div>
-    // <button>Add</button>
-    // <div>
-    //   <span>Name</span><br/>
-    //   <span>Number</span>
-    // </div>
-    // </div>
-  );
+    </div>
+ );
 }
 
 export default App;
