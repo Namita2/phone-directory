@@ -24,6 +24,7 @@ function App() {
           {subscribers.map(subscriber =>{ return <div key={subscriber.id}className="grid-container">
             <span className="grid-item">{subscriber.name}</span>
             <span className="grid-item">{subscriber.number}</span>
+            <button className="custom-btn delete-btn">Delete</button>
           </div>})}
           
           </div>

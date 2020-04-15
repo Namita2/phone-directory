@@ -38,3 +38,8 @@
     color: #808080;
     text-transform: uppercase;
 }
+
+.delete-btn {
+    background: red;
+    color:black;
+}
