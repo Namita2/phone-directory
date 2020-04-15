@@ -1,6 +1,7 @@
 .Header{
-    color:'white';
-    background:'black';
-    text-align:'center';
-    text-transform:'uppercase';
+    color:white;
+    background:black;
+    text-align:center;
+    text-transform:uppercase;
+    padding:10px;
 }
