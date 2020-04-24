@@ -1,8 +1,15 @@
-import React from 'react';
+import React,{Component} from 'react';
 import Header from './Header';
 import './App.css';
 
-function App() {
+class App extends Component{
+
+  deleteHandler(message)
+  {
+    alert(message);
+  }
+  render()
+  {
   let subscribers=[
     {
       name:'namita',number:9591480652,id:1
@@ -24,12 +31,12 @@ function App() {
           {subscribers.map(subscriber =>{ return <div key={subscriber.id}className="grid-container">
             <span className="grid-item">{subscriber.name}</span>
             <span className="grid-item">{subscriber.number}</span>
-            <button className="custom-btn delete-btn">Delete</button>
+            <button className="custom-btn delete-btn" onClick={this.deleteHandler.bind(this,"delete clicked")}>Delete</button>
           </div>})}
           
           </div>
     </div>
- );
+ );}
 }
 
 export default App;
