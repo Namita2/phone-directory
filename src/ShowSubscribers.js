@@ -1,8 +1,8 @@
 import React,{Component} from 'react';
 import Header from './common/Header';
-
 import './common/common.css';
 import './ShowSubscribers.css';
+import {Link} from 'react-router-dom';
 
 class ShowSubscribers extends Component{
   // constructor()
@@ -30,7 +30,7 @@ class ShowSubscribers extends Component{
     <div>
       <Header heading="Phone Directory"/>
      <div className="component-body-container">
-          <button className="custom-btn add-btn">Add</button>
+         <Link to="/add"><button className="custom-btn add-btn">Add</button></Link>
 
           <div className="grid-container heading-container">
             <span className="grid-item name-heading">Name</span>
@@ -38,7 +38,7 @@ class ShowSubscribers extends Component{
           </div>
           {this.props.subscribersList.map(subscriber =>{ return <div key={subscriber.id}className="grid-container">
             <span className="grid-item">{subscriber.name}</span>
-            <span className="grid-item">{subscriber.number}</span>
+            <span className="grid-item">{subscriber.phone}</span>
             <button className="custom-btn delete-btn">Delete</button>
           </div>})}
           
